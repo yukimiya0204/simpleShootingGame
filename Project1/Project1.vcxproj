@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+    <None Include="src\loader\data\players.json" />
+    <None Include="src\loader\data\enemys.json" />
+    <None Include="src\loader\data\enemysBullet.json" />
+    <None Include="src\loader\data\playersBullet.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\bar\Bar.cpp" />
+    <ClCompile Include="src\bar\bars\ExpBar.cpp" />
+    <ClCompile Include="src\bar\bars\HpBar.cpp" />
+    <ClCompile Include="src\bullet\BulletStatus.cpp" />
+    <ClCompile Include="src\card\cards\BigCard.cpp" />
+    <ClCompile Include="src\card\cards\BigCard.h" />
+    <ClCompile Include="src\card\Card.cpp" />
+    <ClCompile Include="src\card\cards\DetailCard.cpp" />
+    <ClCompile Include="src\card\cards\IconCard.cpp" />
+    <ClCompile Include="src\card\cards\MenuCard.cpp" />
+    <ClCompile Include="src\card\cards\CharacterSelectCard.cpp" />
+    <ClCompile Include="src\card\cards\PlayerSelectCard.cpp" />
+    <ClCompile Include="src\common\Buff.cpp" />
+    <ClCompile Include="src\common\calcDamage\Calc.cpp" />
+    <ClCompile Include="src\lib\myBulletLibrary.h" />
+    <ClCompile Include="src\bullet\Bullet.cpp" />
+    <ClCompile Include="src\bullet\bullets\bulletsType\BottomLeftBullet.cpp" />
+    <ClCompile Include="src\bullet\bullets\bulletsType\SinBullet.cpp" />
+    <ClCompile Include="src\bullet\bullets\bulletsType\TopRightBullet.cpp" />
+    <ClCompile Include="src\bullet\bullets\enemyBullets\E_BottomLeftBullet.cpp" />
+    <ClCompile Include="src\bullet\bullets\enemyBullets\E_SinBullet.cpp" />
+    <ClCompile Include="src\bullet\bullets\enemyBullets\E_StraightBullet.cpp" />
+    <ClCompile Include="src\bullet\bullets\enemyBullets\E_TopRightBullet.cpp" />
+    <ClCompile Include="src\bullet\bullets\playerBullets\P_BottomLeftBullet.cpp" />
+    <ClCompile Include="src\bullet\bullets\playerBullets\P_StraightBullet.cpp" />
+    <ClCompile Include="src\bullet\bullets\playerBullets\P_SinBullet.cpp" />
+    <ClCompile Include="src\bullet\bullets\playerBullets\P_TopRightBullet.cpp" />
+    <ClCompile Include="src\bullet\BulletType.h" />
+    <ClCompile Include="src\bullet\bullets\bulletsType\StraightBullet.cpp" />
+    <ClCompile Include="src\common\LevelTable.cpp" />
+    <ClCompile Include="src\enemy\enemies\FastEnemy.cpp" />
+    <ClCompile Include="src\enemy\enemies\FollowTargetEnemy.cpp" />
+    <ClCompile Include="src\enemy\enemies\ShooterEnemy.cpp" />
+    <ClCompile Include="src\enemy\enemies\SinShooterEnemy.cpp" />
+    <ClCompile Include="src\enemy\Enemy.cpp" />
+    <ClCompile Include="src\loader\loaders\BulletLoader.cpp" />
+    <ClCompile Include="src\player\players\SimplePlayer.cpp" />
+    <ClCompile Include="src\player\players\SpeedPlayer.cpp" />
+    <ClCompile Include="src\windows\characterSelect\CharacterSelect.cpp" />
+    <ClCompile Include="src\windows\finish\Finish.cpp" />
+    <ClCompile Include="src\windows\game\Game.cpp" />
+    <ClCompile Include="src\loader\loaders\CharacterLoader.cpp" />
+    <ClCompile Include="src\loader\Loader.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\windows\menu\Menu.cpp" />
+    <ClCompile Include="src\player\Player.cpp" />
+    <ClCompile Include="src\common\Status.cpp" />
+    <ClCompile Include="src\windows\BaseWindow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\bar\Bar.h" />
+    <ClInclude Include="src\bar\bars\ExpBar.h" />
+    <ClInclude Include="src\bar\bars\HpBar.h" />
+    <ClInclude Include="src\bullet\Bullet.h" />
+    <ClInclude Include="src\bullet\BulletStatus.h" />
+    <ClInclude Include="src\bullet\bullets\bulletsType\BottomLeftBullet.h" />
+    <ClInclude Include="src\bullet\bullets\bulletsType\StraightBullet.h" />
+    <ClInclude Include="src\bullet\bullets\bulletsType\SinBullet.h" />
+    <ClInclude Include="src\bullet\bullets\bulletsType\TopRightBullet.h" />
+    <ClInclude Include="src\bullet\bullets\enemyBullets\E_BottomLeftBullet.h" />
+    <ClInclude Include="src\bullet\bullets\enemyBullets\E_SinBullet.h" />
+    <ClInclude Include="src\bullet\bullets\enemyBullets\E_StraightBullet.h" />
+    <ClInclude Include="src\bullet\bullets\enemyBullets\E_TopRightBullet.h" />
+    <ClInclude Include="src\bullet\bullets\playerBullets\P_BottomLeftBullet.h" />
+    <ClInclude Include="src\bullet\bullets\playerBullets\P_SinBullet.h" />
+    <ClInclude Include="src\bullet\bullets\playerBullets\P_StraightBullet.h" />
+    <ClInclude Include="src\bullet\bullets\playerBullets\P_TopRightBullet.h" />
+    <ClInclude Include="src\card\Card.h" />
+    <ClInclude Include="src\card\cards\DetailCard.h" />
+    <ClInclude Include="src\card\cards\IconCard.h" />
+    <ClInclude Include="src\card\cards\MenuCard.h" />
+    <ClInclude Include="src\card\cards\CharacterSelectCard.h" />
+    <ClInclude Include="src\card\cards\PlayerSelectCard.h" />
+    <ClInclude Include="src\common\calcDamage\Calc.h" />
+    <ClInclude Include="src\common\LevelTable.h" />
+    <ClInclude Include="src\common\Type.h" />
+    <ClInclude Include="src\common\Vector.h" />
+    <ClInclude Include="src\common\Buff.h" />
+    <ClInclude Include="src\enemy\enemies\FastEnemy.h" />
+    <ClInclude Include="src\enemy\enemies\FollowTargetEnemy.h" />
+    <ClInclude Include="src\enemy\enemies\ShooterEnemy.h" />
+    <ClInclude Include="src\enemy\enemies\SinShooterEnemy.h" />
+    <ClInclude Include="src\enemy\Enemy.h" />
+    <ClInclude Include="src\loader\loaders\BulletLoader.h" />
+    <ClInclude Include="src\player\players\SimplePlayer.h" />
+    <ClInclude Include="src\player\players\SpeedPlayer.h" />
+    <ClInclude Include="src\windows\characterSelect\CharacterSelect.h" />
+    <ClInclude Include="src\windows\finish\Finish.h" />
+    <ClInclude Include="src\windows\game\Game.h" />
+    <ClInclude Include="src\enemy\Phase.h" />
+    <ClInclude Include="src\lib\myCardLibrary.h" />
+    <ClInclude Include="src\loader\loaders\CharacterLoader.h" />
+    <ClInclude Include="src\loader\Loader.h" />
+    <ClInclude Include="src\player\Player.h" />
+    <ClInclude Include="src\common\Status.h" />
+    <ClInclude Include="src\windows\menu\Menu.h" />
+    <ClInclude Include="src\windows\BaseWindow.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{bfc259a0-6a32-475a-90f3-357416241e30}</ProjectGuid>
+    <RootNamespace>Project1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

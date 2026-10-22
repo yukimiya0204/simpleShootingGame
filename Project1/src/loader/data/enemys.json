@@ -1,0 +1,56 @@
+{
+  "FastEnemy": {
+    "width": 20,
+    "height": 20,
+
+    "baseHp": 50.0,
+    "baseSpeed": 100.0,
+    "basePower": 0.0,
+    "baseHitAttack": 10.0,
+    "baseDefense": 10.0,
+    "knockbackDistance": 5.0,
+    "exp": 1.0  
+  },
+
+  "FollowTargetEnemy": {
+    "width": 30,
+    "height": 30,
+
+    "baseHp": 50.0,
+    "baseSpeed": 80.0,
+    "basePower": 0.0,
+    "baseHitAttack": 15.0,
+    "baseDefense": 10.0,
+    "knockbackDistance": 5.0,
+    "exp": 2.0
+
+  },
+
+  "ShooterEnemy": {
+    "width": 40,
+    "height": 40,
+
+    "baseHp": 50.0,
+    "baseSpeed": 30.0,
+    "basePower": 10.0,
+    "baseHitAttack": 20.0,
+    "baseDefense": 10.0,
+    "knockbackDistance": 5.0,
+    "exp": 3.0
+  },
+
+  "SinShooterEnemy": {
+    "width": 40,
+    "height": 40,
+
+    "baseHp": 50.0,
+    "baseSpeed": 30.0,
+    "basePower": 10.0,
+    "baseHitAttack": 20.0,
+    "baseDefense": 10.0,
+    "knockbackDistance": 5.0,
+    "exp": 3.0
+  }
+
+}
+

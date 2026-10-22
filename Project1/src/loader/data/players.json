@@ -1,0 +1,37 @@
+{
+  "Player": {
+    "width": 30,
+    "height": 20,
+
+    "baseHp": 1000.0,
+    "baseSpeed": 50.0,
+    "basePower": 10.0,
+    "baseHitAttack": 10.0,
+    "baseDefense": 10.0,
+    "knockbackResistance": 5.0
+  },
+
+  "SimplePlayer": {
+    "width": 30,
+    "height": 20,
+
+    "baseHp": 1000.0,
+    "baseSpeed": 100.0,
+    "basePower": 10.0,
+    "baseHitAttack": 10.0,
+    "baseDefense": 10.0,
+    "knockbackResistance": 5.0
+  },
+
+  "SpeedPlayer": {
+    "width": 30,
+    "height": 20,
+
+    "baseHp": 1000.0,
+    "baseSpeed": 300.0,
+    "basePower": 10.0,
+    "baseHitAttack": 10.0,
+    "baseDefense": 10.0,
+    "knockbackResistance": 5.0
+  }
+}

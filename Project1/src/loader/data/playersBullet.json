@@ -1,0 +1,33 @@
+{
+  "BottomLeftBullet": {
+    "width": 10,
+    "height": 5,
+    "speed": 400.0,
+    "power": 10.0,
+    "angle": 15.0
+  },
+
+  "SinBullet": {
+    "width": 10,
+    "height": 5,
+    "speed": 400.0,
+    "power": 10.0,
+    "angle": 0.0
+  },
+
+  "StraightBullet": {
+    "width": 10,
+    "height": 5,
+    "speed": 400.0,
+    "power": 10.0,
+    "angle": 0.0
+  },
+
+  "TopRightBullet": {
+    "width": 10,
+    "height": 5,
+    "speed": 400.0,
+    "power": 10.0,
+    "angle": 15.0
+  }
+}
