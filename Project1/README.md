@@ -17,32 +17,32 @@
 
 ### 0. 前提条件 gitと Visual Studio 2022 Community のインストールをお願いします
 
-### 1. SDL2 関連ライブラリを用意
+##  SDL2 関連ライブラリを用意
 Microsoft vcpkg を使用してSDL2を導入する方法を推奨します。以下の手順で進めてください。
 
 Microsoft vcpkg のインストール手順は以下の通りです。
-# 1. Microsoft vcpkg の GitHub リポジトリにアクセスし、リポジトリをクローンします。
+### 1. Microsoft vcpkg の GitHub リポジトリにアクセスし、リポジトリをクローンします。
 https://github.com/microsoft/vcpkg　このリンクがMicrosoft vcpkg の GitHub リポジトリです。
 
 
-# 2. 次に、新しいフォルダをローカルフォルダの任意の場所に作成し、ターミナルを開いて、先ほど作成したフォルダに移動します。
+### 2. 次に、新しいフォルダをローカルフォルダの任意の場所に作成し、ターミナルを開いて、先ほど作成したフォルダに移動します。
 例: C:\dev\VCPKG
 
-# 3.ターミナルで以下のコマンドを実行する。
+### 3.ターミナルで以下のコマンドを実行する。
 git clone https://github.com/microsoft/vcpkg.git
 
 
-# 4. vcpkgのセットアップ
+### 4. vcpkgのセットアップ
 クローンが完了したら、vcpkgフォルダに移動し、以下のコマンドを実行します。
 .\bootstrap-vcpkg.bat
 
 	
-# 5. 環境変数の設定
+### 5. 環境変数の設定
 環境変数の設定を行います。vcpkgフォルダのパスをコピーし、環境変数の「システム環境変数 または ユーザー環境変数 -> Path ->編集」に移動します。
 右上にある「新規」をクリックし、コピーしたパスを貼り付けて「OK」をクリックします。
 
 
-# 6. SDL2 のインストール
+### 6. SDL2 のインストール
 sdl2をインストールする作業に移ります。
 任意のフォルダに移動し、ターミナルで以下のコマンドを実行します。
 	vcpkg search sdl2 
@@ -50,7 +50,7 @@ sdl2をインストールする作業に移ります。
 	vcpkg integrate install 
 	vcpkg install sdl2 sdl2-image sdl2-ttf
 インストールに成功したら、Visual Studio でプロジェクトを開き、このプログラムをビルドして実行することができます。
-# 7. 6 のコマンド解説
+### 7. 6 のコマンド解説
 vcpkg integrate install コマンドを実行することで、Visual Studio が自動的に vcpkg のライブラリを認識するようになります。
 vcpkg install sdl2 sdl2-image sdl2-ttf コマンドを実行することで、SDL2、SDL2_image、SDL2_ttf のライブラリがインストールされます。
 ## フォルダ構成

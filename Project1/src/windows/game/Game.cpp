@@ -300,32 +300,33 @@ void Game::AddBuffToList(BUFF_TYPE buffType)
 }
 
 
-// フェーズの初期化
+// フェーズの初期化 spawnListの中身は左から順に、敵の種類、出現数、出現間隔、現在のタイマー
+// 例: { ENEMY_TYPE_SHOOTERENEMY, 5, 1.5f, 0.0f } は、ShooterEnemyを5体、1.5秒ごとに出現させる
 void Game::InitializePhase()
 {
 	mPhases.clear();
 	// Initialize phase 1
 	Phase phase1;
 	phase1.phaseNumber = PHASE_1;
-	phase1.spawnList.push_back({ ENEMY_TYPE_SHOOTERENEMY, 1, 1.0f, 0.0f }); // 10 apper every 1 seconds
-	phase1.spawnList.push_back({ ENEMY_TYPE_SINSHOOTERENEMY, 1, 2.0f, 0.0f }); // 10 apper every 2 seconds
-	phase1.spawnList.push_back({ ENEMY_TYPE_FOLLOWTARGETENEMY, 1, 1.0f, 0.0f }); // 10 apper every 1 seconds
+	phase1.spawnList.push_back({ ENEMY_TYPE_SHOOTERENEMY, 3, 1.0f, 0.0f }); 
+	phase1.spawnList.push_back({ ENEMY_TYPE_SINSHOOTERENEMY, 2, 2.0f, 0.0f }); 
+	phase1.spawnList.push_back({ ENEMY_TYPE_FOLLOWTARGETENEMY, 1, 1.0f, 0.0f }); 
 	mPhases.push_back(phase1);
-	/*
+	
 	// Initialize phase 2
 	Phase phase2;
 	phase2.phaseNumber = PHASE_2;
-	phase2.spawnList.push_back({ ENEMY_TYPE_SHOOTERENEMY, 5, 1.5f, 0.0f }); // 10 apper every 1.5 seconds
-	phase2.spawnList.push_back({ ENEMY_TYPE_ENEMY, 5, 4.0f, 0.0f }); // 5 apper every 4 seconds
+	phase2.spawnList.push_back({ ENEMY_TYPE_SHOOTERENEMY, 5, 1.5f, 0.0f }); 
+	phase2.spawnList.push_back({ ENEMY_TYPE_ENEMY, 5, 1.0f, 0.0f });
 	mPhases.push_back(phase2);
 
 	// Initialize phase 3
 	Phase phase3;
 	phase3.phaseNumber = PHASE_3;
-	phase3.spawnList.push_back({ ENEMY_TYPE_ENEMY, 5, 1.0f, 0.0f }); // 15 apper every 1 seconds
-	phase3.spawnList.push_back({ ENEMY_TYPE_ENEMY, 5, 2.5f, 0.0f }); // 10 apper every 2.5 seconds
+	phase3.spawnList.push_back({ ENEMY_TYPE_FOLLOWTARGETENEMY, 5, 1.0f, 0.0f }); 
+	phase3.spawnList.push_back({ ENEMY_TYPE_ENEMY, 5, 2.5f, 0.0f }); 
 	mPhases.push_back(phase3);
-	*/
+	
 }
 
 // プレイヤーの作成

@@ -24,7 +24,7 @@ protected:
 	virtual void Update() = 0;
 	virtual void GenerateOutput() = 0;
 
-  virtual SDL_Texture* getTextTexture(SDL_Renderer* renderer, TTF_Font* font, const std::string& text, SDL_Color color); // 文字テクスチャ生成
+	virtual SDL_Texture* getTextTexture(SDL_Renderer* renderer, TTF_Font* font, const std::string& text, SDL_Color color); // 文字テクスチャ生成
 	// SDL関連
 	static SDL_Window* mWindow;
 	static SDL_Renderer* mRenderer;

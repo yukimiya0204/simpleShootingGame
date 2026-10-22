@@ -24,7 +24,7 @@ private:
 	void ProcessInput() override;
 	void Update() override;
 	void GenerateOutput() override;
-  std::string GetPlayerText(PLAYER_ID playerId); // プレイヤー名取得
+	std::string GetPlayerText(PLAYER_ID playerId); // プレイヤー名取得
 	
 
 	struct PlayerCardInfo {

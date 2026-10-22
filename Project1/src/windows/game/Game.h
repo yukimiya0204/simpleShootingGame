@@ -37,10 +37,10 @@ private:
 	void Update() override;
 	void GenerateOutput() override;
 
-   void InitializeBar(); // バー初期化
+	void InitializeBar(); // バー初期化
 	void UpdateLevelText(); // レベル表示更新
 
- void InitializePhase(); // フェーズ初期化
+	void InitializePhase(); // フェーズ初期化
 	void InitializePlayer(); // プレイヤー初期化
 	void SpawnEnemy(ENEMY_TYPE enemyType); // 敵を生成
 	void InitializeBulletSpawnList(); // 弾発射設定初期化

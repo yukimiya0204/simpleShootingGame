@@ -1,11 +1,5 @@
 #include "CharacterSelect.h"
 
-//-------------------------------------------------------------
-//Character Select Screen
-//-------------------------------------------------------------
-//select simple player or speed player
-//--------------------------------------------------------------
-
 
 
 
@@ -57,7 +51,7 @@ CharacterSelect::~CharacterSelect()
 {
 }
 
-// 
+// メモリ解放
 void CharacterSelect::Shutdown()
 {
 	mCharacterSelectCard1.SetCardTexture(nullptr);
@@ -77,6 +71,7 @@ void CharacterSelect::Shutdown()
 	mFont = nullptr;
 }
 
+// 初期化
 bool CharacterSelect::Initialize()
 {
 	bool success = true;
@@ -90,6 +85,7 @@ bool CharacterSelect::Initialize()
 
 	mTextTexture = getTextTexture(mRenderer, mFont, "Character Select", whiteColor);
 
+	// プレイヤー選択カードの初期化
 	mPlayerCardInfos.resize(mPlayerList.size());
 	for(int i = 0; i < mPlayerList.size(); ++i)
 	{
@@ -110,6 +106,7 @@ bool CharacterSelect::Initialize()
 	return success;
 }
 
+// メインループ
 void CharacterSelect::RunLoop()
 {
 	while (mIsRunning)
@@ -120,6 +117,7 @@ void CharacterSelect::RunLoop()
 	}
 }
 
+// 入力処理
 void CharacterSelect::ProcessInput()
 {
 	SDL_Event event;
@@ -135,7 +133,8 @@ void CharacterSelect::ProcessInput()
 		int mouseY = event.button.y;
 
 		SDL_Point mousePoint = { mouseX, mouseY };
-
+		
+		// プレイヤー選択カードがクリックされたかどうかを判定
 		if (event.type == SDL_MOUSEBUTTONDOWN && event.button.button == SDL_BUTTON_LEFT)
 		{
 			for(int i = 0 ; i < mPlayerCardInfos.size(); ++i)
@@ -153,11 +152,13 @@ void CharacterSelect::ProcessInput()
 	}
 }
 
+
 void CharacterSelect::Update()
 {
 	// Update logic for character select window can be added here
 }
 
+// 描画処理
 void CharacterSelect::GenerateOutput()
 {
 	// Draw background color
@@ -189,21 +190,17 @@ std::string CharacterSelect::GetPlayerText(PLAYER_ID playerId)
 	}
 }
 
+// メイン関数
 PLAYER_ID CharacterSelect::Main()
 {
-	CharacterSelect characterSelect;
-	bool characterSelectSuccess = characterSelect.Initialize();
-	if (characterSelectSuccess)
+	bool success = Initialize();
+	if (success)
 	{
-		characterSelect.RunLoop();
+		RunLoop();
 	}
-	characterSelect.Shutdown();
-	PLAYER_ID selectedPlayerId = characterSelect.GetSelectedPlayerId();
+	Shutdown();
+	PLAYER_ID selectedPlayerId = GetSelectedPlayerId();
 
-	if (selectedPlayerId == PLAYER_ID_MAX)
-	{
-		BaseWindow::CleanupSDL();
-	}
 	return selectedPlayerId;
 }
 
